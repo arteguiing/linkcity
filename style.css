@@ -609,6 +609,7 @@ font-family: 'Open Sans', sans-serif;
   background-color: #343434;
 
 }
+
 .canadianEh {
     background: url(./img/canadian-eh.jpg) center right no-repeat;
     background-size: cover;
@@ -661,6 +662,10 @@ font-family: 'Open Sans', sans-serif;
     padding-bottom: 10px;
 }
 
+.latest-news h4{
+
+}
+
 .asideTitle.greenTitle {
     background: none repeat scroll 0 0 #66cc00;
 }
@@ -674,15 +679,24 @@ font-family: 'Open Sans', sans-serif;
 }
 
 
-.sidebar > h4 {
-    color: #ff9900;
-    font-size: 12px;
+.right-section-container .latest-news h4 {
+    color: #66cc00;
+    font-size: 16px;
     margin-bottom: 15px;
     padding-left: 15px;
+    font-weight: bold;
+    line-height: 23px
     font-family: 'Montserrat', sans-serif;
 }
 
-.sidebar > p{
+.right-section-container .latest-blogs h4 {
+  color: #0066ff;
+}
+.right-section-container .upcoming-events h4 {
+  color: #ff3333;
+}
+
+.right-section-container .sidebar > p{
     color: #ffffff;
     font-size: 14px;
     font-weight: bold;
