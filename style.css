@@ -500,6 +500,43 @@ font-family: 'Open Sans', sans-serif;
   color: #ffffff;
 }
 
+/*Shop Detail*/
+ .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+  .shop-detail > li{
+    padding-bottom: 8px;
+
+  }
+
+  .category-icon-shop img {
+    height: 52px;
+    width: 52px;
+}
+
+ .category-icon-shop img {
+    max-height: 48px;
+}
+
+.category-icon-shop a {
+    color: #7a7a7a;
+}
+.separator{
+    border-bottom: 2px solid red;
+    width: 100%;
+    margin-top: -21px;
+    margin-bottom: 42px;
+}
+
+.category-icon-shop h3:hover{
+    border-bottom: 2px solid #008000;
+   
+}
+
+/*END Shop Detail*/
+
 /* 3. slider-area */
 .nivoSlider {height:50vh !important;}
 .nivoSlider img {height:100% !important;}
@@ -571,12 +608,13 @@ font-family: 'Open Sans', sans-serif;
 .slider-active:hover .owl-nav div.owl-next{left:auto;right:40px;}
 
 .category-icon{
-      background: #e71f30 none repeat scroll 0 0;
-    padding: 3px;
+  background: #e71f30 none repeat scroll 0 0;
+  padding: 3px;
 }
 
 .category-icon:hover{
-    background-color: #008000;
+    
+    border-bottom: 3px solid #008000;
 }
 .categories h3{
     color: #fff;
@@ -762,7 +800,7 @@ margin-bottom: 1px;
 
 }
 .card-body{
-  text-indent: 10px;
+  text-indent: 0px;
 }
 .card-footer:last-child {
     border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
@@ -775,8 +813,15 @@ margin-bottom: 1px;
 }
 
 .text-muted{
-  color: red;
-  font-size: 20px;
+  color: #6c757d !important ;
+  font-size: 15px;
+}
+
+.star-color{
+     color: #ffb400 !important;
+    -webkit-text-stroke: 0px #ffb400;
+    text-shadow: 0px 0px #ffb400;
+    font-size:20px;
 }
 /*END Home Item*/
 
@@ -1412,6 +1457,7 @@ form#search button {
   transition: all 0.3s ease 0s;
 }
 .more:hover{color:#444444;}
+
 /* blog-details */
 .comment-form h5 {
   font-size: 14px;
@@ -1470,6 +1516,32 @@ form#search button {
 }
 .comment-2 {
   margin-left: 90px;
+}
+
+.carousel-item{
+    height: 300px !important;
+} 
+.carousel-item img{
+    height: 300px !important;
+}
+.carousel-next-prev {
+    
+    background-color: orange;
+    height: 40px;
+   
+}
+.carousel-next-prev:before {
+    
+}
+
+.carousel-control-prev  {
+  filter: none;
+  opacity: 1;
+}
+
+.carousel-control-next{
+  filter: none;
+  opacity: 1;
 }
 
 /* 13. about-area */
@@ -1692,12 +1764,14 @@ li {list-style-type: none;}
     background-clip:text 
 }
 
-.main-menu li a:hover{
-    background:#71cd14;
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-    background-clip:text 
+
+.main-menu li:hover{
+  background-color: #e71f30;
+  border-right: 1.5px solid #008000;
+  border-left: 1.5px solid #008000;
+
 }
+
 
 .carousel .carousel-item{
   height: 30px;
