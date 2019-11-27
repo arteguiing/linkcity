@@ -37,10 +37,10 @@
 		<!-- header start -->
 
 
-	<div class="header-top-area hidden-xs" style="background-color:#e94922;" >
+	<div class="header-top-area" style="background-color:#e94922;" >
 				<div class="container">
 					<div class="row" >
-						<div class="col-md-6 col-sm-6">
+						<div class="col-md-6 col-sm-6 d-none d-md-block">
 							<ul class="top-right">
 								<li>
 
@@ -112,13 +112,23 @@
     </header>
 			<!-- main-menu-area-end -->
 
-
+<div class="container d-md-none">
+  <div class="row mobile-cat">
+    <div class="col-6">
+        <h6>All Deals</h4>
+    </div>
+     <div class="col-6" id="cat">
+        <h6>Categories</h4>
+    </div>
+  </div>
+  
+</div>
 
 <div class="container" id="categories-shop" style="margin-top: 12px;">
   <div class="row">
     
 
-     <div class="col-md-2">
+     <div class="col-4 col-md-2">
      <div class="category-icon-shop mb-30">
           <div class=" text-center">
                   <div class="icon-cat">
@@ -133,7 +143,7 @@
     </div>
 
 
-     <div class="col-md-2">
+     <div class="col-4 col-md-2">
      <div class="category-icon-shop mb-30">
           <div class=" text-center">
                   <div class="icon-cat">
@@ -147,7 +157,7 @@
         </div>
     </div>
 
-     <div class="col-md-2">
+     <div class="col-4 col-md-2">
      <div class="category-icon-shop mb-30">
           <div class=" text-center">
                   <div class="icon-cat">
@@ -161,7 +171,7 @@
         </div>
     </div>
 
-     <div class="col-md-2">
+     <div class="col-4 col-md-2">
      <div class="category-icon-shop mb-30">
           <div class=" text-center">
                   <div class="icon-cat">
@@ -175,7 +185,7 @@
         </div>
     </div>
 
-     <div class="col-md-2">
+     <div class="col-4 col-md-2">
      <div class="category-icon-shop mb-30">
           <div class=" text-center">
                   <div class="icon-cat">
@@ -189,7 +199,7 @@
         </div>
     </div>
 
-    <div class="col-md-2">
+    <div class="col-4 col-md-2">
      <div class="category-icon-shop mb-30">
           <div class=" text-center">
                   <div class="icon-cat">
@@ -205,15 +215,16 @@
    
 </div>
 </div>
+
 <div class="container-fluid separator" >
   
 </div>
 
 <!-- END categories section -->
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-md-12 col-lg-6">
+    <div class="col-sm-6 col-md-6 col-lg-6">
         <div id="demo" class="carousel slide" data-ride="carousel" style="height:300px;">
 
               <!-- Indicators -->
@@ -324,7 +335,7 @@
 
 
     </div>
-    <div class="col-md-12 col-lg-6">
+    <div class="col-sm-6 col-md-6 col-lg-6">
         <nav>
                     <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
                       <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">OPENING HOURS</a>
@@ -539,6 +550,19 @@ var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+<script type="text/javascript">
+ $( document ).ready(function() {
+    /* $("#categories-shop").hide();
+     $(".separator").hide();*/
+
+    $("#cat").click(function(){
+      $("#categories-shop").toggle();
+      $(".separator").toggle();
+
+    }); 
+}); 
+
+</script>
   
     </body>
 </html>

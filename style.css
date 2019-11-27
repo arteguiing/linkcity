@@ -1822,43 +1822,41 @@ li {list-style-type: none;}
 
 /*Navigation*/
 
-/*.main-menu li:hover{
-  background-color: #53a318;
-  border-right: 1.5px solid #008000;
-  border-left: 1.5px solid #008000;
+.mobile-cat{
+  padding-top:5px;
+  border-bottom: 1px solid #e6e7e8;
+}
 
-}*/
+.mobile-cat h6 {
+ font-family: "Roboto", cursive;
+ font-weight: 500;
+ color:#7a7a7a;
+ 
+}
+
 .header_area .main-menu .navbar .navbar-brand{
   padding:0 2rem 0 5rem; 
 }
 
-.header_area .main-menu .navbar{
-  padding:4px 15rem; 
-}
 
 .header_area .main-menu .nav-item .nav-link{
   font-family: "Roboto", cursive;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   padding:1.7rem;
   color: black;
 }
 
-.header_area .main-menu .navbar-nav .active a {
-
- /* color: red;*/
- /* border-bottom: 1.5px solid red;*/
-}
 
 
 .header_area .main-menu li  a{
   color: white !important;
 }
 .custom-toggler.navbar-toggler {
-    border-color: rgb(255,102,203);
+    border-color: rgba(105,105,105);
 }
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(105,105,105)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 
@@ -1935,11 +1933,13 @@ li {list-style-type: none;}
         color: red;
       }
 }*/
+@media only screen and (max-width: 360px) {
+ #categories-shop{display: none;}
+ .separator{visibility: hidden;}
+}
 
 @media (min-width: 576px) {  
-  .nav-tabs a{
-    color: red;
-  }
+
  
 }
  
@@ -1949,11 +1949,20 @@ li {list-style-type: none;}
 }
  
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
+  .container-fluid{
+    width: 85% !important;
+  /*  margin-right: 30%;*/
+    /*margin-left: 8%;*/
+  } 
  
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
+    .class-fluid{
+    width: 50% !important;
+    margin-right: 10%;
+  } 
     
 }
