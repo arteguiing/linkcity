@@ -442,7 +442,7 @@ font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 /* main-menu-area */
-.main-menu-area{}
+/*.main-menu-area{}
 .logo {
   margin-top: 30px;
 }
@@ -471,7 +471,7 @@ font-family: 'Open Sans', sans-serif;
   margin-left: 3px;
 }
 /* sub-menu */
-.main-menu ul li ul.submenu {
+/*.main-menu ul li ul.submenu {
   background: #fff none repeat scroll 0 0;
   opacity: 0;
   position: absolute;
@@ -498,7 +498,7 @@ font-family: 'Open Sans', sans-serif;
 .main-menu ul li ul.submenu li a:hover {
   background: #3452ff none repeat scroll 0 0;
   color: #ffffff;
-}
+}*/
 
 #topbar {
     background: #fff;
@@ -506,11 +506,7 @@ font-family: 'Open Sans', sans-serif;
     border-bottom: 1px solid #eee;
     font-size: 14px;
 }
-
-@media (min-width: 992px)
-.d-lg-block {
-    display: block!important;
-}
+*/
 
 /*Shop Detail*/
  .carousel-inner img {
@@ -690,6 +686,7 @@ nav > div a.nav-item.nav-link:focus
   margin-bottom: 15px;
 }
 .icon-cat h3 {
+   font-family: "Roboto", cursive;
   font-size: 14px;
   font-weight: 700;
   padding-top: 7px;
@@ -1823,13 +1820,50 @@ li {list-style-type: none;}
     background-clip:text 
 }
 
+/*Navigation*/
 
-.main-menu li:hover{
+/*.main-menu li:hover{
   background-color: #53a318;
   border-right: 1.5px solid #008000;
   border-left: 1.5px solid #008000;
 
+}*/
+.header_area .main-menu .navbar .navbar-brand{
+  padding:0 2rem 0 5rem; 
 }
+
+.header_area .main-menu .navbar{
+  padding:4px 15rem; 
+}
+
+.header_area .main-menu .nav-item .nav-link{
+  font-family: "Roboto", cursive;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding:1.7rem;
+  color: black;
+}
+
+.header_area .main-menu .navbar-nav .active a {
+
+ /* color: red;*/
+ /* border-bottom: 1.5px solid red;*/
+}
+
+
+.header_area .main-menu li  a{
+  color: white !important;
+}
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/*END Navigation*/
+
 
 
 .carousel .carousel-item{
