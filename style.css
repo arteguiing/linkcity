@@ -500,6 +500,18 @@ font-family: 'Open Sans', sans-serif;
   color: #ffffff;
 }
 
+#topbar {
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+@media (min-width: 992px)
+.d-lg-block {
+    display: block!important;
+}
+
 /*Shop Detail*/
  .carousel-inner img {
       width: 100%;
@@ -524,7 +536,7 @@ font-family: 'Open Sans', sans-serif;
     color: #7a7a7a;
 }
 .separator{
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #53a318;
     width: 100%;
     margin-top: -21px;
     margin-bottom: 42px;
@@ -533,6 +545,53 @@ font-family: 'Open Sans', sans-serif;
 .category-icon-shop h3:hover{
     border-bottom: 2px solid #008000;
    
+}
+
+
+nav > .nav.nav-tabs{
+
+  border: none;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+
+}
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active
+{
+  border: none;
+    padding: 18px 25px;
+    color:#fff;
+    background:#272e38;
+    border-radius:0;
+}
+
+nav > div a.nav-item.nav-link.active:after
+ {
+  content: "";
+  position: relative;
+  bottom: -60px;
+  left: -10%;
+  border: 15px solid transparent;
+  border-top-color: #53a318 ;
+}
+.tab-content{
+  background: #fdfdfd;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-top:5px solid #53a318;
+    border-bottom:5px solid #53a318;
+    padding:30px 25px;
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus
+{
+  border: none;
+    background: #53a318;
+    color:#fff;
+    border-radius:0;
+    transition:background 0.20s linear;
 }
 
 /*END Shop Detail*/
@@ -1766,7 +1825,7 @@ li {list-style-type: none;}
 
 
 .main-menu li:hover{
-  background-color: #e71f30;
+  background-color: #53a318;
   border-right: 1.5px solid #008000;
   border-left: 1.5px solid #008000;
 
@@ -1828,3 +1887,39 @@ li {list-style-type: none;}
 
 
 /* css end   #f8f8f8 */
+
+
+
+ 
+/* Small devices (landscape phones, 576px and up) */
+
+/*@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+       .nav-tabs a{
+        color: red;
+      }
+}*/
+
+@media (min-width: 576px) {  
+  .nav-tabs a{
+    color: red;
+  }
+ 
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+ 
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
