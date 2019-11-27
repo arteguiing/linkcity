@@ -532,7 +532,7 @@ font-family: 'Open Sans', sans-serif;
     color: #7a7a7a;
 }
 .separator{
-    border-bottom: 2px solid #53a318;
+    border-bottom: 2px solid #ea5b0c;
     width: 100%;
     margin-top: -21px;
     margin-bottom: 42px;
@@ -569,14 +569,14 @@ nav > div a.nav-item.nav-link.active:after
   bottom: -60px;
   left: -10%;
   border: 15px solid transparent;
-  border-top-color: #53a318 ;
+  border-top-color: #ea5b0c ;
 }
 .tab-content{
   background: #fdfdfd;
     line-height: 25px;
     border: 1px solid #ddd;
-    border-top:5px solid #53a318;
-    border-bottom:5px solid #53a318;
+    border-top:5px solid #ea5b0c;
+    border-bottom:5px solid #ea5b0c;
     padding:30px 25px;
 }
 
@@ -584,7 +584,7 @@ nav > div a.nav-item.nav-link:hover,
 nav > div a.nav-item.nav-link:focus
 {
   border: none;
-    background: #53a318;
+    background: #ea5b0c;
     color:#fff;
     border-radius:0;
     transition:background 0.20s linear;
