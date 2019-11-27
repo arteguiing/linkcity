@@ -1935,10 +1935,20 @@ li {list-style-type: none;}
 }*/
 @media only screen and (max-width: 360px) {
  #categories-shop{display: none;}
- .separator{visibility: hidden;}
+ .separator{display: none;}
 }
 
-@media (min-width: 576px) {  
+@media only screen and (max-width: 740px) {
+   #categories-shop{display: none;}
+   .separator{display: none;}
+    .mobile-cat{
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e7e8;
+
+}
+}
+@media (max-width: 576px) {  
 
  
 }
