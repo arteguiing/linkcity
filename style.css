@@ -1940,9 +1940,7 @@ li {list-style-type: none;}
   nav > div a.nav-item.nav-link,
   nav > div a.nav-item.nav-link.active
   {
-    
-      padding: 18px 14px;
-    
+    padding: 18px 5px;
   }
 
 
