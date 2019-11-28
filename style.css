@@ -1822,6 +1822,12 @@ li {list-style-type: none;}
 
 /*Navigation*/
 
+.navbar-brand img{
+  height: 67px;
+  width: 136px
+
+}
+
 .mobile-cat{
   padding-top:5px;
   border-bottom: 1px solid #e6e7e8;
