@@ -1936,6 +1936,16 @@ li {list-style-type: none;}
 @media only screen and (max-width: 360px) {
  #categories-shop{display: none;}
  .separator{display: none;}
+
+  nav > div a.nav-item.nav-link,
+  nav > div a.nav-item.nav-link.active
+  {
+    
+      padding: 18px 14px;
+    
+  }
+
+
 }
 
 @media only screen and (max-width: 740px) {
