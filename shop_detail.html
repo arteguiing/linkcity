@@ -12,11 +12,13 @@
 		
 		<!-- all css here -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
+       
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
         <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
         <link rel="stylesheet" href="css/owl.carousel.css">
 		<link rel="stylesheet" href="css/magnific-popup.css">
-		<link rel="stylesheet" href="css/meanmenu.css">
+		
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/responsive.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -75,55 +77,91 @@
 
     <div class="header-top-area light-orange-top" >
 
-    <div class="col-col-lg-12">
-      <div class="row">
-           <form class="form-inline mx-auto" style="padding-top:10px;">
-            <input class="form-control  mr-sm-4 " type="search" placeholder="Search Link City" aria-label="Search">
-             <input class="form-control  mr-sm-4 " type="search" placeholder="Location" aria-label="Search">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand logo" href="index.html">
+          Linkcity
+        </a>
+
+        
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+
+          <!-- Nav -->
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item dropdown ">
+              <div class="dropdown drop-cat" >
+                <a class="btn btn-cat dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#e94922">
+                 <span class="">Categories</span> 
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Home & Auto</a>
+                  <a class="dropdown-item" href="#">Restaurants & Bars</a>
+                  <a class="dropdown-item" href="#">Grocery</a>
+                  <a class="dropdown-item" href="#">Shopping</a>
+                  <a class="dropdown-item" href="#">Services</a>
+                </div>
+              </div>
+            </li>
+             <li class="nav-item dropdown" style="margin-right:8px">
+              <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control search-city" placeholder="Search LinkCity">
+              </div>
+            </li>
+             <li class="nav-item dropdown">
+                 <div class="form-group cat-location" >
+                   
+                    <select class="form-control" id="city">
+                      <option>Scarborough</option>
+                      <option>Etobicoke</option>
+                      <option>East York</option>
+                      <option>North York</option>
+                      <option>Thornhill</option>
+                    </select>
+
+                  </div>
+
+            </li>
+             <li class="nav-item dropdown">
+               <button type="submit" class="btn btn-primary mb-2 search-cat" style="color:black !important;"><span class="fas fa-search" style="color:black"></span></p></button>
+             </li>
            
-          </form>
+           
+           
+          
+          </ul>
+
+          <!-- Nav -->
+          <ul class="navbar-nav flex-row notif" >
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="modal" href="#modalSearch">
+                <i class="icon  fas fa-shopping-cart" style="color:white"></i>
+              </a>
+            </li>
+            <li class="nav-item ml-lg-n4">
+              <a class="nav-link" href="./account-orders.html">
+                <i class="icon far fa-bell" style="color:white"></i>
+              </a>
+            </li>
+          
+         
+
+            <li class="nav-item ml-lg-n4">
+             <button type="submit" class="btn btn-primary mb-2 search-cat" style="color:black !important; margin-left:30px !important;"> <i class="fas fa-unlock-alt" style="color:black">&nbsp;</i>Sign In</button>
+            </li>
+          </ul>
+
+        </div>
+
       </div>
-      
-    </div>
-     <!--   <nav class="navbar navbar-expand-md navbar-dark">
-    <a class="navbar-brand" href="#">Bootstrap</a>
-  
-    </button>
+    </nav>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item active">
-         
-          <form class="form-inline">
-            <input class="form-control  mr-sm-4 " type="search" placeholder="Search Link City" aria-label="Search">
-           
-          </form>
-        </li>
-         <li class="nav-item active">
-         
-          <form class="form-inline">
-            <input class="form-control  mr-sm-4" type="search" placeholder="Location" aria-label="Search">
-            
-          </form>
-        </li>
-
-        <li class="nav-item active">
-         
-          <form class="form-inline">
-            <button class="btn btn-light my-sm-0" type="submit">Search</button>
-            
-          </form>
-        </li>
-       
-      </ul>
-
-      <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-light my-sm-0" type="submit">Search</button> 
-      </form>
-
-    </div>
-  </nav> -->
+   
+    
     </div> 
 			<!-- main-menu-area-end -->
 
@@ -237,7 +275,7 @@
 
 <!-- END categories section -->
 
-<div class="container-fluid">
+<div class="container-fluid item" style="padding-right:8% !important;padding-left:8% !important;">
   <div class="row">
     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
         <div id="demo" class="carousel slide" data-ride="carousel" style="height:300px;">
