@@ -1,4 +1,6 @@
 
+
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,600,700,900');
 html, body {height: 100%;}
 .floatleft {float:left}
@@ -1396,7 +1398,7 @@ label {
 
 
  .signup{
- padding-top: 30px;
+ padding-top: -17px;
  padding-bottom: 30px;
  color: #141518;
  font-weight: 700;
