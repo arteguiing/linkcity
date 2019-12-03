@@ -4,21 +4,6 @@
     CSS INDEX
     ===================
 	
-    1. Template default CSS
-	2. header
-	3. slider-area
-	4. What-we-do-area
-	5. counter-area
-	6. portfolio-area
-	7. service-area
-	8. testimonial-area
-	9. footer
-	10. contact-area
-	11. blog-area
-	13. about-area
-	14. team-area
-	15. price
-	16. video-area
 
 -----------------------------------------------------------------------------------*/
 
@@ -479,7 +464,16 @@ font-family: 'Open Sans', sans-serif;
     border-bottom: 2px solid #ea5b0c;
     width: 100%;
     margin-top: -21px;
+    margin-bottom: 50px;
+     opacity: 0.8;
+}
+
+.separator-business{
+    border-bottom: 2px solid #ea5b0c;
+    width: 100%;
+    margin-top: -21px;
     margin-bottom: 42px;
+     opacity: 0.5;
 }
 
 
@@ -627,7 +621,7 @@ nav > div a.nav-item.nav-link:focus
   margin-bottom: 15px;
 }
 .icon-cat h3 {
-   font-family: "Roboto", cursive;
+   font-family: 'Open Sans',sans-serif;
   font-size: 14px;
   font-weight: 700;
   padding-top: 7px;
@@ -783,21 +777,21 @@ margin-bottom: 1px;
 }
 
 .card h3{
- font-family: "Roboto", cursive;
+font-family: 'Open Sans',sans-serif;
   font-size: 25px;
   font-weight: 700;
   color: #4f4f4f;
 }
 
 .card p{
- font-family: "Roboto", cursive;
+font-family: 'Open Sans',sans-serif;
   font-size: 17px;
   font-weight: 500;
   color:#4f4f4f;;
 }
 
 .card button{
- font-family: "Roboto", cursive;
+ font-family: 'Open Sans',sans-serif;
   font-size: 17px;
   font-weight: 500;
   border: none;
@@ -815,6 +809,10 @@ margin-bottom: 1px;
     text-shadow: 0px 0px #ffb400;
     font-size:20px;
 }
+/*.item .col-lg-3{
+  padding-right: 6px !important;
+  padding-left: 15px !important;
+}*/
 /*END Home Item*/
 
 
@@ -838,14 +836,14 @@ margin-bottom: 1px;
   
 }
 .section-title h2 {
-  font-family: "Roboto", cursive;
+  font-family: 'Open Sans',sans-serif;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   position: relative;
   text-transform: uppercase;
-  margin-bottom: -49px;
+  margin-bottom: -12px;
   padding-top: 77px;
 }
 .section-title.text-center > p {
@@ -864,6 +862,17 @@ margin-bottom: 1px;
   transform: translateX(-50%);
   width: 50px;
 }
+.cat-title h2 {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+
 .single-What-wedo {
   background: #f6f6f6 none repeat scroll 0 0;
   padding: 20px;
@@ -881,14 +890,14 @@ margin-bottom: 1px;
   text-transform: uppercase;
 }
 .section-title h2::before {
-  background: #3452ff;
+  background: #e94922;
   bottom: 0;
   content: "";
   height: 1px;
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
-  width: 50px;
+  width: 30%;
 }
 .What-wedo-text p {
   font-size: 14px;
@@ -896,6 +905,109 @@ margin-bottom: 1px;
   line-height: 26px;
   margin-bottom: 0;
 }
+
+/*Modal*/
+.modal-newsletter { 
+    color: #999;
+    width: 625px;
+    font-size: 15px;
+  }
+  .modal-newsletter .modal-content {
+    padding: 30px;
+    border-radius: 0;   
+    border: none;
+  }
+
+  .modal-body h1 {
+    color: #e94922;
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    padding-bottom: 18px;
+  }
+
+  .modal-body h2 {
+    color: #000;
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+     padding-bottom: 14px;
+  }
+  .subscribe-btn{
+    border:none;
+  }
+ .message {
+    margin: 10px -10px;
+    padding: 10px 15px;
+    background: #ffe4b2;
+    line-height: 2;
+}
+
+.agrement p{
+    font-size: 10px;
+    line-height: 1.5;
+}
+  .modal-newsletter .close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    text-shadow: none;
+    opacity: 0.3;
+    font-size: 24px;
+  }
+  .modal-newsletter .close:hover {
+    opacity: 0.8;
+  }
+  .modal-newsletter .icon-box {
+    color: #7265ea;   
+    display: inline-block;
+    z-index: 9;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .modal-newsletter .icon-box i {
+    font-size: 110px;
+  }
+  .modal-newsletter .form-control, .modal-newsletter .btn {
+    min-height: 46px;
+    border-radius: 0;
+  }
+  .modal-newsletter .form-control {
+    box-shadow: none;
+    border-color: #dbdbdb;
+  }
+  .modal-newsletter .form-control:focus {
+    border-color: #f95858;
+    box-shadow: 0 0 8px rgba(249, 88, 88, 0.4);
+  }
+    .modal-newsletter .btn {
+        color: #fff;
+    background: #f95858;
+    text-decoration: none;
+    transition: all 0.4s;
+        line-height: normal;
+    padding: 6px 20px;
+    min-width: 150px;
+    margin-left: 6px !important;
+        border: none;
+    }
+  .modal-newsletter .btn:hover, .modal-newsletter .btn:focus {
+    box-shadow: 0 0 8px rgba(249, 88, 88, 0.4);
+    background: #f72222;
+    outline: none;
+  }
+  .modal-newsletter .input-group {
+    margin-top: 30px;
+  }
+  .hint-text {
+    margin: 100px auto;
+    text-align: center;
+  }
+
+/*  End Modal*/
+
+
 /* 5. counter-area */
 .counter-area{}
 .single-counter {
@@ -1267,30 +1379,7 @@ label {
   font-size: 14px;
   text-transform: capitalize;
 }
-/*.btn {
-  background: #3452FF;
-  border-radius: 0;
-  color: hsl(0, 0%, 100%);
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  padding: 15px 30px;
-  text-transform: uppercase;
-  transition: all 0.3s ease 0s;
-}
-.btn:hover{background:#3112FF;color:#fff;}
-.contact-bottom-text::before {
-  background: #27d4e0 none repeat scroll 0 0;
-  bottom: 0;
-  content: "";
-  height: 2px;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  width: 50px;
-}*/
+
 .contact-bottom-text h2 {
   font-size: 26px;
   font-weight: 700;
@@ -1302,6 +1391,46 @@ label {
   font-weight: 400;
   margin-bottom: 0;
 }
+/*Footer*/
+.sticky-refer {
+  margin-top: 10px;
+  height: 100px;
+  background-color: #00f800;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  padding-top: 40px;
+  color: #141518;
+ font-weight: 700;
+ font-size: 25;
+   color:white;
+}
+
+/*.sticky-refer{
+  height: 100px;
+  background-color:#00f800;
+  margin-top: 15px;
+  position: -webkit-sticky;
+  position: fixed;
+  bottom: 0;
+*/
+}
+
+ .signup{
+ padding-top: 30px;
+ padding-bottom: 30px;
+ color: #141518;
+ font-weight: 700;
+ font-size: 25;
+   color:white;
+}
+.page-link:focus {
+    z-index: 2;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem #e94922;
+}
+/*End Footer*/
+
 /* 11. blog-area */
 .blog-widget {
   margin-bottom: 50px;
@@ -1741,7 +1870,7 @@ li {list-style-type: none;}
 */
 .header-top-area li a{
 
-  color: #4a4a4a;
+  color: black;
 }
 
 
@@ -1777,7 +1906,7 @@ li {list-style-type: none;}
 }
 
 .mobile-cat h6 {
- font-family: "Roboto", cursive;
+ font-family: 'Open Sans',sans-serif;
  font-weight: 500;
  color:#7a7a7a;
  
@@ -1786,9 +1915,7 @@ li {list-style-type: none;}
 
 }
 
-/*.header_area .main-menu .navbar .navbar-brand{
-  padding:0 2rem 0 5rem; 
-}*/
+
 .logo
 {
  color:
@@ -1804,18 +1931,27 @@ li {list-style-type: none;}
 
 
 .header_area .main-menu .nav-item .nav-link{
-  font-family: "Roboto", cursive;
+  font-family: 'Open Sans',sans-serif;
   text-transform: uppercase;
   font-weight: 400;
-  padding:1.7rem;
+  padding:1rem;
   color: black;
-  font-size: 14px
+  font-size: 12px
 }
+
 
 
 
 .header_area .main-menu li  a{
   color: white !important;
+}
+
+.header_area .main-menu li  a:hover{
+    
+    text-decoration: underline;
+    text-decoration-color:white;
+}
+
 }
 .custom-toggler.navbar-toggler {
     border-color: rgba(105,105,105);
@@ -1842,25 +1978,13 @@ color:#e94922;
 
 
 
-/*.drop-cat:hover,
-.btn-cat:hover,
-.dark-orange:hover{
-border-radius: 10px;
-height:40px;
-background-color:white;
-color:#e94922 !important;
-border:none;
-margin-right:10px;
-
-}*/
-
 
 
 /*END Navigation*/
 
 /*Light Orange*/
 .navbar-nav{
- font-family: "Roboto", cursive;
+ font-family: 'Open Sans',sans-serif;
 }
 .search-city::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #ea7d23;
@@ -1893,34 +2017,61 @@ margin-right:10px;
     color: #aaa;
 }
 
-.search-cat{
-border-radius: 10px;
-height:40px;
-background-color:white;
-color:#e94922 !important;
-border:none;
-margin-right:10px;
-
-}
 
 .cat-location{
  margin-right:10px;
 }
 
-.btn-primary:hover {
-
-background-color:white !important;
-color:#e94922;
+.button-search {
+    background-color: #e94922;
+   
+    border: none;
+    color: white !important;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left:9px;
+    cursor: pointer;
 }
+.button {
+    background-color: #e94922;
+    border-radius: 10px;
+    height:30px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left:9px;
+    cursor: pointer;
+}
+.button:hover{
+  background-color: white;
+  color: #e94922 !important;
+ 
+}
+
 
 .btn-primary {
 background-color:#e94922 !important;
-color: black;
-
+color: white !important;
+border:none;
+border-radius: 10px;
 }
+
+.btn-primary:hover {
+background-color:white !important;
+color: #e94922 !important;
+border:none;
+border-radius: 10px;
+}
+
+
 .notif .icon{
   padding-right: 25px;
-  font-size: 23px;
+  font-size: 19px;
   padding-bottom: 14px;
 }
 .dropdown-menu a:hover{
@@ -1928,14 +2079,19 @@ color: black;
   background-color: #ea7d23;
 }
 
-/*.form-control:focus {
-color: white;
-background-color:#ea7d23;
-border-color:#e94922;
-outline: 0;
-box-shadow: 0 0 0 .2rem
-    rgba(0,123,255,.25);
-}*/
+.sign-register a{
+  font-size: 14px;
+  font-weight: 600;
+  color: white !important;
+}
+
+.sign-register a:hover{
+   text-decoration: underline;
+    text-decoration-color:white;
+}
+.dropdownMenuLink a{
+  color:black !important;
+}
 /*end Light Orange*/
 
 
@@ -1982,6 +2138,24 @@ box-shadow: 0 0 0 .2rem
     padding: 0 30px;
     color: #fff;
 }
+
+
+.community {
+    font-family: montserrat;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 34px;
+    margin: 0;
+    padding: 0 30px;
+    color: #fff;
+    text-transform: uppercase;
+letter-spacing: 2px;
+}
+.community:hover {
+  text-decoration: underline;
+    text-decoration-color:white;
+}
+
 
 .orangeTitle {
     background: none repeat scroll 0 0 #ff9900;
